@@ -1,10 +1,10 @@
 import type { Response } from "express";
 import type { AuthRequest } from "../../middlewares/auth.middleware.js";
 import {
-  createGiveawaySchema,, updateGiveaway
-  updateGiveawaySchema,
+  createGiveawaySchema,
+  updateGiveawaySchema, 
 } from "./giveaway.schema.js";
-import { createGiveaway, deleteGiveaway, listUserGiveaways } from "./giveaway.service.js";
+import { createGiveaway, deleteGiveaway, listUserGiveaways, updateGiveaway } from "./giveaway.service.js";
 import { ApiError } from "../../utils/api-error.js";
 
 export const createGiveawayHandler = async (
